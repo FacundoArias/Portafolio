@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "navside.component.scss"
+    ],
+    "names": [],
+    "file": "navside.component.css"
+}

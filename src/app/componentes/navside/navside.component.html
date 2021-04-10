@@ -1,0 +1,46 @@
+<nav>
+  <div class="position-absolute top-0 d-xl-none despliegue">
+    <i class="fas fa-bars" (click)="mostrar()" #cerrar></i>
+  </div>
+
+  <div class="contenedor-nav " id="toggle">
+    <div class="h-100 vh-100 bg-primary p-0 franja" >
+      <div>
+        <div class="contenedor-imagen pt-5">
+          <div
+            class="rounded-circle img-temp m-auto shadow-sm p-3 mb-5 bg-body rounded"
+          ></div>
+        </div>
+        <div class="text-white text-center mt-5 nombre">
+          <h4>Facundo Arias</h4>
+        </div>
+        <div class="text-white text-center mt-2 titulo">Desarrollador Web</div>
+      </div>
+      <div class="contenedor-nav-links">
+        <ul class="p-0 list-unstyled">
+          <li class="active li" (click)="activo(sec1,cerrar)" #sec1>
+            <a href="#seccion1">Sobre Mi</a>
+          </li>
+          <li class="li" (click)="activo(sec2,cerrar)" #sec2>
+            <a href="#seccion2">Herramientas</a>
+          </li>
+          <li class="li" (click)="activo(sec3,cerrar)" #sec3>
+            <a href="#seccion3">Mis Proyectos</a>
+          </li>
+          <li class="li" (click)="activo(sec4,cerrar)" #sec4>
+            <a href="#seccion4">Contacto</a>
+          </li>
+        </ul>
+      </div>
+      <div class="redes-sociales">
+        <ul class="d-flex justify-content-center list-unstyled">
+          <li><i class="fab fa-linkedin-in"></i></li>
+          <li><i class="fab fa-github"></i></li>
+          <li><i class="fab fa-facebook-f"></i></li>
+          <li><i class="fab fa-instagram"></i></li>
+          <li><i class="fab fa-twitter"></i></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
