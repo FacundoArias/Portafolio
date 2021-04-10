@@ -22,9 +22,9 @@
         class="mt-3"
       ></textarea>
       <div class="boton d-flex justify-content-center mt-3">
-        <button type="submit" class="btn-mas d-flex text-center px-5">Enviar</button>
+        <button type="submit" class="btn-mas d-flex text-center px-5" (click)="enviarForm()">Enviar</button>
       </div>
     </form>
-
+    <p class="text-center mt-3" *ngIf="mostrarMsj"> Actualmente no esta habilitado el enviar formulario pero si te gusta lo que hago podes contactarme escribiendome en cualquiera de mis redes</p>
   </div>
 </div>

@@ -5,12 +5,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./form-contact.component.scss']
 })
 export class FormContactComponent implements OnInit {
-
+  mostrarMsj:boolean;
   constructor() { }
 
   ngOnInit(): void {
   }
   
+  enviarForm(){
+    this.mostrarMsj=true;
+  }
 
 
 }
