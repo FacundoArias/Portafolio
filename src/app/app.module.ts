@@ -10,6 +10,7 @@ import { SobreMiComponent } from './componentes/sobre-mi/sobre-mi.component';
 import { HerramientasComponent } from './componentes/herramientas/herramientas.component';
 import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
 import { FormContactComponent } from './componentes/form-contact/form-contact.component';
+import { ComunicadorService } from './servicio/comunicador.service';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,7 @@ import { FormContactComponent } from './componentes/form-contact/form-contact.co
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [ComunicadorService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

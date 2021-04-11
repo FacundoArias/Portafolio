@@ -1,17 +1,18 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { ComunicadorService } from 'src/app/servicio/comunicador.service';
 
 @Component({
   selector: 'app-navside',
   templateUrl: './navside.component.html',
   styleUrls: ['./navside.component.scss']
 })
-export class NavsideComponent{
+export class NavsideComponent implements OnInit{
 
   pantalla:number;
   bool:boolean=false;
   @ViewChild('cerrar') cerrar:ElementRef;
 
-  constructor(){
+  constructor(private comunicadorService:ComunicadorService){
     addEventListener("resize",()=>{
       let contenedor=document.getElementById('toggle');
       if(innerWidth<=992 && this.bool==false ){
@@ -26,6 +27,8 @@ export class NavsideComponent{
 
    
   }  
+  ngOnInit(): void {
+  }
 
   mostrar(){
     let contenedor=document.getElementById('toggle');
@@ -49,6 +52,9 @@ export class NavsideComponent{
     }
   }
   
+  getEstado(){
+   return this.comunicadorService.getEstado();
+  }
 
 }
 

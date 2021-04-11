@@ -26,6 +26,7 @@ $secondary:#fff;
 
 .contenedor-nav{
     width: 300px;
+    height: 100vh;
     position: absolute;
     transition: 1s;
     z-index: 5;
@@ -50,13 +51,16 @@ $secondary:#fff;
     
     
 }
+.contenedor-imagen{
+    padding-top: 3rem;
+}
 
 .img-temp{
     width: 140px;
     min-height: 140px;
     background: url('./assets/img/foto.png');
     background-size: cover;
-   background-position: center;    
+    background-position: center;    
 }
 
 .nombre{
@@ -67,6 +71,7 @@ $secondary:#fff;
 .titulo{
     @include tipoLetra('Lato');
     font-style: italic;
+    margin-top: 0.5rem;
 }
 
 .contenedor-nav-links{
@@ -339,6 +344,9 @@ form{
 }
 //SUBRAYADOS
 
+.contenedor__seccion_contacto{
+    margin-bottom: 100px;
+}
 
 //MEDIAS
 @media (min-width: 1200px) { 
@@ -349,9 +357,16 @@ form{
 
 
  @media (max-width: 576px) { 
-    
+    .contenedor-imagen{
+        padding-top: 1rem  !important;
+    }
+    .titulo{
+        margin-top: 0;
+    }
+    .contenedor-nav{
+        height: max-content!important;
+    }
  }
-
  ::-webkit-scrollbar {display: none;}
 
  @import "../node_modules/bootstrap/scss/bootstrap";
