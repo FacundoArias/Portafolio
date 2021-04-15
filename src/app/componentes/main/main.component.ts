@@ -29,7 +29,6 @@ export class MainComponent implements OnInit {
       
     }
     else if(posicionContacto<=100){
-      console.log(posicionContacto);
       this.ComunicadorService.setEstado("contacto");
     }
     else if(posicionHerramientas>300){
